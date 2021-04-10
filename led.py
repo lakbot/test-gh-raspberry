@@ -2,9 +2,14 @@ import RPi.GPIO as GPIO
 import time
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
-GPIO.setup(18,GPIO.OUT)
-print "LED on"
-GPIO.output(18,GPIO.HIGH)
-time.sleep(100)
-print "LED off"
-GPIO.output(18,GPIO.LOW)
+
+pinout = 18
+color = "Green"
+
+GPIO.setup(pinout,GPIO.OUT)
+print "LED on N" + str(pinout) + " " + color
+GPIO.output(pinout,GPIO.HIGH)
+time.sleep(1)
+print "LED off N" + str(pinout) + " " + color
+GPIO.output(pinout,GPIO.LOW)
+time.sleep(1)
