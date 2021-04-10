@@ -3,8 +3,8 @@ import time
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
 
-pinout = 23
-color = "Yellow"
+pinout = 18
+color = "Green"
 
 GPIO.setup(pinout,GPIO.OUT)
 print "LED on N" + str(pinout) + " " + color
