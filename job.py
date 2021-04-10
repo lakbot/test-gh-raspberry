@@ -1,1 +1,2 @@
-execfile('led.py')
+while True:
+  execfile('led.py')
