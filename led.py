@@ -4,7 +4,7 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
 
 pinout = 18
-color = "Green"
+color = "Blue"
 
 GPIO.setup(pinout,GPIO.OUT)
 print "LED on N" + str(pinout) + " " + color
